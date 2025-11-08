@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Login | SRM Outpass</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <img src="./images/srm_logo.webp" class="logo" alt="SRM Logo" />
+        <h1>SRM Hostel Outpass - Student Login</h1>
+    </header>
+
+    <div class="container form-container">
+        <h2>Student Login</h2>
+        <form id="loginForm">
+            <label>SRM Email ID:</label>
+            <input type="email" id="email" placeholder="example@srmist.edu.in" required />
+
+            <label>Password:</label>
+            <input type="password" id="password" required />
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        <p class="switch-link">Don’t have an account? <a href="register.html">Register here</a></p>
+    </div>
+
+    <footer>
+        <p>© 2025 SRM Institute of Science and Technology</p>
+    </footer>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", (e) => {
+            e.preventDefault();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+            loginStudent(email, password);
+        });
+    </script>
+</body>
+
+</html>
