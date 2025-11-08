@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration | SRM Outpass</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <img src="./images/srm_logo.webp" class="logo" alt="SRM Logo" />
+        <h1>SRM Hostel Outpass - Student Register</h1>
+    </header>
+
+    <div class="container form-container">
+        <h2>Student Registration</h2>
+        <form id="registerForm">
+            <label>Full Name:</label>
+            <input type="text" id="name" required />
+
+            <label>SRM Email ID:</label>
+            <input type="email" id="email" placeholder="example@srmist.edu.in" required />
+
+            <label>Create Password:</label>
+            <input type="password" id="password" required />
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+
+        <p class="switch-link">Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <footer>
+        <p>© 2025 SRM Institute of Science and Technology</p>
+    </footer>
+
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", (e) => {
+            e.preventDefault();
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            if (!email.endsWith("@srmist.edu.in")) {
+                alert("Please use your SRM email ID!");
+                return;
+            }
+
+            registerStudent(name, email, password);
+            document.getElementById("registerForm").reset();
+        });
+    </script>
+</body>
+
+</html>
