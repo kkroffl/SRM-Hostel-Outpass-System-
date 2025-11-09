@@ -1,7 +1,6 @@
-function registerStudent(name, email, password) {
+function registerStudent(name, rId, email, password) {
   let students = JSON.parse(localStorage.getItem("students")) || [];
 
-  // Check if email already exists
   const exists = students.find((s) => s.email === email);
   if (exists) {
     alert("Email already registered! Please login.");
@@ -10,6 +9,7 @@ function registerStudent(name, email, password) {
 
   const newStudent = {
     id: Date.now(),
+    rId,
     name,
     email,
     password,
@@ -36,17 +36,11 @@ function loginStudent(email, password) {
   }
 }
 
-// ----------------------
-// LOGOUT
-// ----------------------
 function logoutStudent() {
   localStorage.removeItem("loggedInStudent");
   window.location.href = "index.html";
 }
 
-// ----------------------
-// APPLY OUTPASS
-// ----------------------
 function applyOutpass(reason, fromDate, toDate) {
   const student = JSON.parse(localStorage.getItem("loggedInStudent"));
   if (!student) {
@@ -101,6 +95,6 @@ function displayStudentOutpasses() {
   });
 }
 
-if (window.location.pathname.includes("student-dashboard.html")) {
+if (window.location.pathname.includes("student_dashboard.html")) {
   displayStudentOutpasses();
 }
