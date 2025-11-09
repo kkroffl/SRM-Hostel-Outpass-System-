@@ -5,6 +5,7 @@ The SRM Hostel Outpass System is a web-based application designed to digitalize 
 This project aims to reduce manual paperwork, improve efficiency, and create a transparent workflow between students, hostel office superintendents (HoS), and administrators.
 
 💡 Features
+
 👨‍🎓 Student Portal
 
 Register and log in using SRM Email ID
@@ -32,21 +33,12 @@ Local storage–based data handling for demo purposes
 Can be easily connected to a backend (Java JDBC / Node.js / Firebase)
 
 🧰 Tech Stack
+
 Layer	Technology Used
 Frontend	HTML5, CSS3, JavaScript
 Database (Demo)	Browser LocalStorage
 Design Language	SRM Academia Theme (Blue & White)
 Responsive Design	Custom CSS Media Queries (No Frameworks)
-🏗️ Folder Structure
-Hostel_Outpass_System/
-│
-├── index.html                # Landing page with portal options
-├── register.html             # Student registration page
-├── login.html                # Student login page
-├── student-dashboard.html    # Student dashboard (apply & view outpass)
-├── admin-dashboard.html      # Admin/HoS dashboard (approve/reject)
-├── style.css                 # SRM-themed responsive stylesheet
-└── script.js                 # Handles registration, login & outpass logic
 
 ⚙️ How It Works
 
