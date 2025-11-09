@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Hostel Outpass System">
+    <output-path>$PROJECT_DIR$/classes/artifacts/Hostel_Outpass_System</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="src" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Java EE 6-Java EE 6" />
+          <element id="library" level="project" name="mysql-connector-j-9.5.0" />
+          <element id="library" level="project" name="json-20231013" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
