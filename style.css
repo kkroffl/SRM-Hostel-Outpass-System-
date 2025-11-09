@@ -116,6 +116,8 @@ footer {
 }
 
 .form-container {
+    justify-content: center;
+    align-items: center;
     width: 400px;
     margin: 50px auto;
     background: white;
@@ -166,6 +168,27 @@ footer {
     font-size: 14px;
     padding: 8px 12px;
   }
+
+  .welcome-card {
+    padding: 30px 25px;
+    width: 90%;
+  }
+
+  .portal-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .welcome-card h2 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -190,4 +213,78 @@ footer {
     font-size: 14px;
     padding: 12px;
   }
+
+    .welcome-card {
+    padding: 25px 20px;
+    border-radius: 10px;
+  }
+
+  .welcome-card h2 {
+    font-size: 22px;
+  }
+
+  .welcome-card p {
+    font-size: 14px;
+  }
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(50vh); 
+  background-color: var(--srm-grey);
+  padding: 20px;
+}
+
+.welcome-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  padding: 40px 60px;
+  text-align: center;
+  max-width: 650px;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.welcome-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.welcome-card h2 {
+  color: var(--srm-blue);
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.welcome-card p {
+  color: #555;
+  font-size: 20 px;
+  margin-bottom: 25px;
+}
+
+.portal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: var(--srm-blue);
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--srm-lightblue);
+  transform: translateY(-2px);
 }
