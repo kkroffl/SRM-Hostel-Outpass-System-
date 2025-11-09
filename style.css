@@ -134,3 +134,60 @@ footer {
     text-decoration: none;
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-left {
+    justify-content: center;
+  }
+
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  input, textarea {
+    font-size: 14px;
+  }
+
+  .container, .form-container {
+    padding: 15px;
+  }
+
+  .card {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

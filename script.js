@@ -1,6 +1,3 @@
-// ----------------------
-// STUDENT REGISTRATION
-// ----------------------
 function registerStudent(name, email, password) {
   let students = JSON.parse(localStorage.getItem("students")) || [];
 
@@ -24,9 +21,6 @@ function registerStudent(name, email, password) {
   return true;
 }
 
-// ----------------------
-// STUDENT LOGIN
-// ----------------------
 function loginStudent(email, password) {
   const students = JSON.parse(localStorage.getItem("students")) || [];
   const student = students.find(

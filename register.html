@@ -21,6 +21,9 @@
             <label>Full Name:</label>
             <input type="text" id="name" required />
 
+            <label>Registration Number:</label>
+            <input type="number" id="rId" required />
+
             <label>SRM Email ID:</label>
             <input type="email" id="email" placeholder="example@srmist.edu.in" required />
 
@@ -34,13 +37,14 @@
     </div>
 
     <footer>
-        <p>© 2025 SRM Institute of Science and Technology</p>
+        <p>© SRM Institute of Science and Technology</p>
     </footer>
 
     <script>
         document.getElementById("registerForm").addEventListener("submit", (e) => {
             e.preventDefault();
             const name = document.getElementById("name").value.trim();
+            const rId = document.getElementById("rId").value.trim();
             const email = document.getElementById("email").value.trim();
             const password = document.getElementById("password").value.trim();
 
