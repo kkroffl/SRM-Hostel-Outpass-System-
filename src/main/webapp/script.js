@@ -13,7 +13,7 @@ function registerStudent(name, rId, email, password) {
                 alert("Email already registered! Please login.");
             } else if (data === "success") {
                 alert("Registration successful! You can now login.");
-                window.location.href = "login.html";
+                window.location.href = "student_login.html";
             } else {
                 alert("Error registering student. Try again.");
             }
